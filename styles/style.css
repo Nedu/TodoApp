@@ -1,0 +1,174 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #607D8B;
+	margin: 0 auto;
+	text-align: center;
+	max-width: 34.375em;
+	min-width: 14.375em;
+	font-size: 100%;
+}
+
+
+.add {
+  display: flex;
+  margin-bottom: 1.5em;
+}
+
+#addTodoTextInput {
+  flex: 1;
+}
+
+#addTodoTextInput:not(:first-child) {
+  border-left: 0;
+}
+
+#addTodoTextInput:not(:last-child) {
+  border-right: 0;
+}
+
+.buttonControls {
+  background-color: #7d608b; 
+  color: #D6AAED;
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+#addTodoTextInput,
+.buttonControls {
+  border: none;
+  padding: 0.5em 0.75em;
+}
+
+#addTodoTextInput:first-child,
+.buttonControls:first-child {
+  border-radius: 2px 0 0 2px;
+}
+
+#addTodoTextInput:last-child,
+.buttonControls:last-child {
+  border-radius: 0 2px 2px 0;
+}
+
+#toggleAll:before {
+	content: "\25bd";
+	font-size: 1.3em;
+}
+
+.view {
+	position: relative;
+	width: 95.5%;
+	float: left;
+	/*padding: 15px;*/
+	/*border: 1px solid #D6AAED;*/
+	margin-top: -25px;
+	padding-top: 15px;
+
+}
+
+ul{
+	list-style: none;
+	float: left;
+	margin: 0;
+	padding: 0;
+}
+
+li * {
+	float: left;
+}
+
+li {
+	clear: both;
+}
+
+.deleteButton:before {
+	border: none;
+}
+
+.deleteButton {
+	float: right;
+	right: 10px;
+	border: none;
+	background: none;
+	font-size: 18px;
+	padding: 0.5em;
+	cursor: pointer;
+	color: #c10909;
+}
+
+.todoDiv {
+	width: 31.25em;
+	/*border: 1px solid #D6AAED;*/
+	margin-bottom: 14px;
+	height: 45px;
+	background-color: #c384e4;
+}
+
+.todoDiv:first-child {
+	margin-top: -13px;
+	border-top-style: none;
+}
+
+.editInput{
+	height: 30px;
+}
+
+.todoApp {
+	display: block;
+	width: 31.25em;
+	background-color: #9366ab;
+	margin-top: 4.375em;
+	margin-left: 6.25em;
+}
+
+label {
+	color: #FFFFFF;
+	position: relative;
+	top: 0.6em;
+}
+
+input[type=checkbox] {
+	margin-right: 1em;
+	position: relative;
+	top: 1em;
+}
+
+.todoList li {
+	position: relative;
+}
+
+.todoList li label {
+	white-space: pre-line;
+	word-break: break-all;
+	display: block;
+	/*padding: 15px 60px 15px 15px;*/
+	/*margin-left: 45px;*/
+	line-height: 1.2;
+	transition: color 0.4s;
+}
+
+@media (max-width: 680px) {
+	body {
+		width: auto;
+	}
+
+	.todoApp {
+		/*width: auto;*/
+		margin-top: 4.375em;
+		margin-left: 0;
+	}
+
+	/*.todoDiv {
+		width: 34.25em;
+	}*/
+}
+
+/*@media (max-width: 547px) {
+	.todoDiv {
+
+	}
+}*/
+
+

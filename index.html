@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todos</title>
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+    <!--[if lt IE 9]>
+      <script src='//cdnjs.cloudflare.com/ajax/libs/nwmatcher/1.2.5/nwmatcher.min.js'></script>
+      <script src='//cdnjs.cloudflare.com/ajax/libs/json2/20140204/json2.min.js'>
+      <script src='//cdn.rawgit.com/gisu/selectivizr/1.0.3/selectivizr.js'></script>
+      <script src='//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js'>
+      <script src='//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.js'>
+    <![endif]-->
+  </head>
+  <body>
+    
+    <section class="todoApp">
+      <header>
+        <h1>To-Do List</h1>
+
+        <div class="add">
+          <button class="buttonControls" id="toggleAll" onclick="handlers.toggleAll()"></button>
+          <input id="addTodoTextInput" type="text" placeholder="Add an item" autofocus>
+          <button class="buttonControls" onclick="handlers.addTodo()">+</button>
+        </div> 
+      </header>
+      <section class="view">
+          <ul class="todoList">
+          </ul>
+      </section>
+      
+      
+      <!-- <div>
+        <button onclick="handlers.editTodo()">Edit Todo</button>
+        <input id="changeTodoPositionInput" type="number">
+        <input id="changeTodoTextInput" type="text">
+      </div> -->
+          
+    </section>
+
+    <script src="scripts/todo.js"></script>
+  </body>
+</html>
